@@ -5,6 +5,10 @@ import (
 	"math/bits"
 )
 
+var (
+	ERROR_ILLEGAL_TAG_0 error = errors.New("illegal tag 0")
+)
+
 type Lexer struct {
 	data         []byte
 	position     int

@@ -15,10 +15,9 @@ func main() {
 			Value: "Alice",
 		},
 		Age: &pb.Age{
-			Value: 20,
+			Value: 132,
 		},
 	}
-
 	if err := write("./person/alice.bin", p); err != nil {
 		log.Fatal(err)
 	}
